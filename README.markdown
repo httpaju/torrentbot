@@ -70,8 +70,8 @@
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/telegram-torrent-bot.git
-   cd telegram-torrent-bot
+   git clone https://github.com/httpaju/torrentbot.git
+   cd torrentbot
    ```
 2. Install dependencies:
    ```bash
