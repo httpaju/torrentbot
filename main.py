@@ -85,14 +85,7 @@ async def download_cmd(client, message: Message):
 @app.on_message(filters.command("status") & filters.private)
 async def status_cmd(client, message: Message):
     # List active downloads for this user
-    torrents = list(torrents_col.find({"user_id": message.from_user.id}))
-    if not torrents:
-        await message.reply("ℹ️ You have no active downloads.")
-        return
-    status_messages = []
-    for t in torrents:
-        status_messages.append(f"ID: {t['hash']}\nStatus: {get_download_status(t['hash'])}")
-    await message.reply("\n\n".join(status_messages))
+    
 
 @app.on_message(filters.command("directlink") & filters.private)
 async def directlink_cmd(client, message: Message):
