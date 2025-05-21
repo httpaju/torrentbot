@@ -18,4 +18,5 @@ def serve_file(hash_id):
     return send_file(file_path, as_attachment=True)
 
 def run_flask():
+    import os
     app.run(host="0.0.0.0", port=int(os.getenv("PORT", 8080)))
