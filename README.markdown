@@ -65,6 +65,7 @@
    ```
 6. Configure the required environment variables (`BOT_TOKEN`, `API_ID`, `API_HASH`, `LOG_CHANNEL`, `MONGO_URI`, `DB_NAME`, `HOST`, `PORT`, `DOWNLOAD_DIR`).
 7. Verify that the service is running and the bot responds to commands.
+8. 
  [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
 
 ### Deploy to VPS / Docker
